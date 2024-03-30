@@ -1,0 +1,95 @@
+div {
+  width: 100%;
+}
+
+
+.container {
+  width: 100%;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  width: 100%;
+  text-align: left;
+  font-size: 2rem;
+}
+
+label {
+  display: block;
+  color: #bababa;
+  font-size: 1rem;
+  padding-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+input {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border: solid 2px #ebebeb;
+  border-radius: 10px;
+  width: 100%;
+  color: #7a7a7a;
+
+  &:focus {
+    border: 2px solid #0D41E1;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.container-select {
+  height: 77px;
+}
+
+select {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border: solid 2px #ebebeb;
+  border-radius: 10px;
+  outline: none;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  flex-direction: column;
+  height: calc(100% - 64px);
+
+
+  & div.action {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+
+    & button + button {
+      background: transparent;
+      color: #0D41E1;
+      border: 1px solid blue;
+    }
+  }
+}
+
+.btn {
+  padding: 1rem;
+  border: none;
+  background-color: #567AEA;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #315feb;
+    transition: background-color 0.3s ease-in-out;
+  }
+}
+

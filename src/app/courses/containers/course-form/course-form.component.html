@@ -1,0 +1,22 @@
+<form [formGroup]="form">
+  <div class="container">
+    <h1>Cadastre um novo curso</h1>
+    <div>
+      <label for="name">Nome</label>
+      <input type="email" id="name" matInput formControlName="name" placeholder="Nome">
+    </div>
+
+    <div class="container-select">
+      <label for="category">Categoria</label>
+        <select formControlName="category" id="category">
+          <option selected value="Back-end">Back-end</option>
+          <option value="Front-end">Front-end</option>
+        </select>
+    </div>
+    <div class="action">
+      <button (click)="onSubmit()" class="btn">Salvar</button>
+      <button (click)="onCancel()" class="btn">Cancelar</button>
+    </div>
+  </div>
+
+</form>

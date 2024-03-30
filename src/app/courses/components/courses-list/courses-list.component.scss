@@ -1,0 +1,18 @@
+mat-table > * {
+  display: flex;
+}
+
+mat-cell:not(:last-child) {
+  gap: 1rem;
+  align-items: center;
+}
+
+
+.actions-column {
+  flex: 0 0 150px;
+}
+
+.btn-add {
+  justify-content: center;
+  margin-right: 0.4rem;
+}
